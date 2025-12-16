@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# The ;& synatx allws your code to fall through the code once a single case matches
+# ie If case one mattches it will chek case two wheather it matches too and it matches it will execute it's code 
+# and the pattern  continues
+
+s="$1"
+case "$s" in
+	n*) echo "Matched n*";&
+	newton) echo 'Matched newton';&
+	f*) echo 'Matched f*';;
+	foo) echo 'matched foo';&
+	*) echo 'matched *';&
+esac
+
