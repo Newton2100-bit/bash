@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+array=(one two tree "newton irungu")
+
+# stringifying every thing in the array into one
+for value in "${array[*]}"; do
+	echo $value 
+done
+
+# dealing with them as deiiferent values
+for value in "${!array[@]}"; do
+	echo "$value => ${array[value]}"
+done
