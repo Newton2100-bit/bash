@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+s='newton'
+
+case "$s" in
+	n*) echo 'matched n*';;&
+	newton) echo 'matched newton';;&
+	f*) echo 'matched f*';;&
+	foo) echo 'matched foo';;&
+	*) echo 'matched *';;&
+esac
+
