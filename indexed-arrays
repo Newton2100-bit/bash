@@ -1,0 +1,24 @@
+#! /usr/bin/env bash
+
+# unlike c arrays in bahs have () not {} like in c
+# Worth noting that asin python you can hvae negative indicies and it wil work just fine
+
+array=( foo bar baz "newton irungu" )
+
+# echo "Our array has $(( ${#array} + 1 )) items in it"
+
+for item in "${array[@]}"; do
+	echo "${item}"
+done
+
+# indexing
+#
+echo "the laste element is > ${array[-1]}"
+
+# using varibales as the indecies
+# 1. you can use the $name syntax
+# 2. you can just use the name itself
+
+idx=2
+echo "At index $idx we have ${array[idx]}"
+echo "At index $idx we have ${array[$idx]}"
