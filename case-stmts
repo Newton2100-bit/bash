@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+s=$1
+
+case "$s" in 
+	newton)
+		echo hi newton
+		;;
+	baz)
+		echo there he is see him
+		;;
+	guy)
+		echo here comes trouble
+		;;
+esac
+
+
