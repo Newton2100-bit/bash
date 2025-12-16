@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+declare -a array1
+declare -a array2
+
+array1=(for bar baz 'newton irungu')
+
+# The actual copying now
+array2=( "${array1[@]}" )
+
+for item in "${array2[@]}"; do
+	echo "Item : $item"
+done
+
+echo -e "\nwe have added  'mwaura' python java\n"
+
+# Appending into an array
+array2+=('mwaura ada' python java)
+
+for item in "${array2[@]}"; do
+	echo "Added ] $item"
+done
