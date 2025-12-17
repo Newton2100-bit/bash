@@ -4,14 +4,9 @@ s=$1
 
 case "$s" in 
 	newton)
-		echo hi newton
-		;;
+		echo hi newton ;;
 	baz)
-		echo there he is see him
-		;;
+		echo there he is see him ;;
 	guy)
-		echo here comes trouble
-		;;
+		echo here comes trouble ;;
 esac
-
-

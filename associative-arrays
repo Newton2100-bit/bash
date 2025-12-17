@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+declare -A assocarray
+assocarray[one]=1
+assocarray[two]=2
+assocarray[three]=3
+
+for key in "${!assocarray[@]}"; do
+	value=${assocarray[$key]}
+	echo "got $key = $value"
+done
+
+# the indexed array can work with array[key] and also
+# array[$key] where associative array only surport 
+# assocarray[$key]
+
+declare -a array=(foo bar baz 'newton irungu')
+for key in "${!array[@]}"; do
+	echo "got $key = ${array[key]}"
+done
